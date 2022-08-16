@@ -49,19 +49,19 @@
 //
 // Steppers
 //
-#define X_STEP_PIN                           128
-#define X_DIR_PIN                            129
-#define X_ENABLE_PIN                         130
+#define X_STEP_PIN                           16
+#define X_DIR_PIN                            17
+#define X_ENABLE_PIN                         18
 //#define X_CS_PIN                             0
 
-#define Y_STEP_PIN                           131
-#define Y_DIR_PIN                            132
-#define Y_ENABLE_PIN                         133
+#define Y_STEP_PIN                           19
+#define Y_DIR_PIN                            21
+#define Y_ENABLE_PIN                         22
 //#define Y_CS_PIN                            13
 
-#define Z_STEP_PIN                           134
-#define Z_DIR_PIN                            135
-#define Z_ENABLE_PIN                         136
+#define Z_STEP_PIN                           23
+#define Z_DIR_PIN                            32
+#define Z_ENABLE_PIN                         33
 //#define Z_CS_PIN                             5  // SS_PIN
 
 #define E0_STEP_PIN                          137
@@ -84,3 +84,41 @@
 
 // SPI
 #define SDSS                                   5
+
+
+/**
+ 
+GPIO	Input	Output	Notes
+0	pulled up	OK	outputs PWM signal at boot /
+1	TX pin	OK	debug output at boot  /
+2	OK	OK	connected to on-board LED/
+3	OK	RX pin	HIGH at boot /
+4	OK	OK	/
+5	OK	OK	outputs PWM signal at boot /
+6	x	x	connected to the integrated SPI flash /
+7	x	x	connected to the integrated SPI flash /
+8	x	x	connected to the integrated SPI flash /
+9	x	x	connected to the integrated SPI flash /
+10	x	x	connected to the integrated SPI flash /
+11	x	x	connected to the integrated SPI flash /
+12	OK	OK	boot fail if pulled high /
+13	OK	OK	/
+14	OK	OK	outputs PWM signal at boot
+15	OK	OK	outputs PWM signal at boot /
+16	OK	OK	X_STEP_PIN
+17	OK	OK	X_DIR_PIN
+18	OK	OK	X_ENABLE_PIN
+19	OK	OK	Y_STEP_PIN
+21	OK	OK	Y_DIR_PIN
+22	OK	OK	Y_ENABLE_PIN  
+23	OK	OK	Z_STEP_PIN
+25	OK	OK	/
+26	OK	OK	/
+27	OK	OK	/
+32	OK	OK	Z_DIR_PIN 
+33	OK	OK	Z_ENABLE_PIN
+34	OK		input only /
+35	OK		input only /
+36	OK		input only /
+39	OK		input only /
+ */
